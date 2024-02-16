@@ -205,7 +205,7 @@ class KeyGenerationApi
                     break;
             }
 
-            self::$logger->error("ApiException : $e");
+            self::$logger->error("ApiException : " . $e->getMessage());
             throw $e;
         }
     }
