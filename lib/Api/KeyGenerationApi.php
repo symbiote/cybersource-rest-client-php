@@ -174,7 +174,7 @@ class KeyGenerationApi
                 $printHttpBody = $httpBody;
             }
             
-            self::$logger->debug("Body Parameter :\n" . $printHttpBody); 
+            self::$logger->debug("Body Parameter :\n" . json_encode($printHttpBody)); 
         }
 
         self::$logger->debug("Return Type : \CyberSource\Model\FlexV1KeysPost200Response");
